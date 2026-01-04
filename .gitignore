@@ -1,0 +1,23 @@
+# ===== .NET / C# =====
+bin/
+obj/
+*.dll
+*.pdb
+
+# ===== Visual Studio / Rider =====
+.vs/
+.idea/
+
+# ===== Logs & Cache =====
+*.cache
+*.sentinel
+*.log
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Environment =====
+.env
+.env.*
+

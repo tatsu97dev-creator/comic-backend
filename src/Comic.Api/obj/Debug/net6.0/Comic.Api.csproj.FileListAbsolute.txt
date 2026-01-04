@@ -25,3 +25,10 @@ C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\ob
 C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\obj\Debug\net6.0\Comic.Api.pdb
 C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\obj\Debug\net6.0\Comic.Api.genruntimeconfig.cache
 C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\obj\Debug\net6.0\ref\Comic.Api.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\81909\OneDrive\デスクトップ\漫画\comic-backend\src\Comic.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

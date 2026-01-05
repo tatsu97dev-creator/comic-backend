@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: comic-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: comic
+      POSTGRES_PASSWORD: comicpass
+      POSTGRES_DB: comicdb
+    volumes:
+      - comic_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  comic_postgres_data:

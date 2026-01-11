@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Comic.Api.Controllers;
 
@@ -11,7 +11,8 @@ namespace Comic.Api.Controllers;
 public class AuthController : ControllerBase
 {
     // Program.cs と同じキー。将来は設定ファイル/環境変数に逃がす
-    private const string DevSigningKey = "DEV_ONLY__change_me_to_long_random_string_please_1234567890";
+    private const string DevSigningKey =
+        "DEV_ONLY__change_me_to_long_random_string_please_1234567890";
 
     // 開発専用：トークン発行
     // 本番では削除 or 無効化する想定
@@ -23,12 +24,10 @@ public class AuthController : ControllerBase
         {
             // sub はユーザーID扱い（Cognitoでもsubが基本）
             new(JwtRegisteredClaimNames.Sub, "dev-user-1"),
-
             // email はログインユーザーの識別用
             new(JwtRegisteredClaimNames.Email, email),
-
             // 例：権限（将来 admin などにもできる）
-            new("role", "user")
+            new("role", "user"),
         };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(DevSigningKey));
@@ -43,11 +42,13 @@ public class AuthController : ControllerBase
 
         var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-        return Ok(new
-        {
-            accessToken = jwt,
-            tokenType = "Bearer",
-            expiresIn = 8 * 60 * 60
-        });
+        return Ok(
+            new
+            {
+                accessToken = jwt,
+                tokenType = "Bearer",
+                expiresIn = 8 * 60 * 60,
+            }
+        );
     }
 }

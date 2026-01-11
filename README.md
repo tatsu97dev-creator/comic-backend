@@ -56,3 +56,34 @@ dotnet run
 ```bash
 docker compose -f docker/docker-compose.yml down
 ```
+
+
+
+## EF Core Migrations（DBスキーマ変更）
+
+### 前提
+- Postgres（Docker）が起動していること
+- `Comic.Api` の接続文字列が Postgres を指していること
+
+### マイグレーション作成
+**実行場所：comic-backend フォルダ**
+(`Comic.Api.csproj` があるフォルダで実行します。)
+
+```bash
+dotnet ef migrations add <MigrationName>
+```
+
+### DBへ反映（update database）
+```bash
+dotnet ef database update
+```
+
+### 直前のマイグレーションを取り消す
+```bash
+dotnet ef migrations remove
+```
+
+### マイグレーション一覧を見る
+```bash
+dotnet ef migrations list
+```

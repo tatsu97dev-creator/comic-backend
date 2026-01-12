@@ -9,4 +9,6 @@ public class AppDbContext : DbContext
         : base(options) { }
 
     public DbSet<Work> Works { get; set; } = null!;
+    public DbSet<Work> Authors { get; set; } = null!;
+    public DbSet<Work> Publishers { get; set; } = null!;
 }
